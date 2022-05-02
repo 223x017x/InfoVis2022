@@ -6,7 +6,7 @@ d3.csv("https://223x017x.github.io/InfoVis2022/W04/task1data.csv")
             parent: '#drawing_region',
             width: 256,
             height: 256,
-            margin: {top:10, right:10, bottom:20, left:40}
+            margin: {top:100, right:10, bottom:20, left:40}
         };
 
         const scatter_plot = new ScatterPlot( config, data );
@@ -43,7 +43,7 @@ class ScatterPlot {
         self.inner_height = self.config.height - self.config.margin.top - self.config.margin.bottom;
 
         self.xscale = d3.scaleLinear()
-            .range( [0, self.inner_width+100] );
+            .range( [0, self.inner_width] );
 
         self.yscale = d3.scaleLinear()
             .range( [0, self.inner_height] );
