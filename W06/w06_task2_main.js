@@ -52,12 +52,12 @@ class ScatterPlot {
             .ticks(6);
 
         self.xaxis_group = self.chart.append('g')
-            .attr('transform', `translate(0, ${self.inner_height})`);
+            .attr('transform', `translate(0, ${self.inner_height})`)
 	    .append("text")
 	    .atter("fill","black")
 	    .atter("x",10)
 	    .atter("y",10)
-	    .text("xlabel")
+	    .text("xlabel");
 
 	self.yaxis = d3.axisLeft( self.yscale )
             .ticks(6);
