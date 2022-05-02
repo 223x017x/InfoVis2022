@@ -1,4 +1,4 @@
-d3.csv("https://223x017x/InfoVis2022/W04/task1data.csv")
+d3.csv("https://223x017x.github.io/InfoVis2022/W04/task1data.csv")
     .then( data => {
         data.forEach( d => { d.x = +d.x; d.y = +d.y;  });
 
@@ -54,7 +54,7 @@ class ScatterPlot {
         self.xaxis_group = self.chart.append('g')
             .attr('transform', `translate(0, ${self.inner_height})`);
 
-	self.yaxis = d3.axisBottom( self.yscale )
+	self.yaxis = d3.axisLeft( self.yscale )
             .ticks(6);
 
         self.yaxis_group = self.chart.append('g')
