@@ -103,7 +103,7 @@ class ScatterPlot {
 	    .append("text")
 	    .attr("fill", "black")
 	    .attr("text-anchor", "middle")
-	    .attr("x", 10)
+	    .attr("x", 0)
 	    .attr("y", self.inner_hight/2)
 	    .attr("transform", "rotate(-90)")
 	    .attr("font-weight", "middle")
