@@ -5,7 +5,7 @@ d3.csv("https://223x017x.github.io/InfoVis2022/W04/task1data.csv")
         var config = {
             parent: '#drawing_region',
             width: 256,
-            height: 512,
+            height: 256,
             margin: {top:10, right:10, bottom:20, left:40}
         };
 
@@ -92,7 +92,7 @@ class ScatterPlot {
 	      .append("text")
 	      .attr("fill","black")
 	      .attr("x",0)
-	    .attr("y",30)
+	    .attr("y",20)
 	      .attr("text-anchor", "middle")
               .attr("font-size", "10pt")
               .attr("font-weight", "middle")
