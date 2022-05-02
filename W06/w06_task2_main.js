@@ -79,6 +79,14 @@ class ScatterPlot {
     render() {
         let self = this;
 
+	self.append("text")
+	    .attr("x", 24)
+	    .attr("y", 12)
+	    .attr("font-size", "13px")
+	    .attr("text-anchor", "top")
+	    .attr("font-weight", 700)
+	    .text("title");
+
         self.chart.selectAll("circle")
             .data(self.data)
             .enter()
