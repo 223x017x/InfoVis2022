@@ -91,8 +91,8 @@ class ScatterPlot {
             .call( self.xaxis )
 	    .append("text")
 	    .atter("fill","black")
-	    .atter("x",50)
-	    .atter("y",50)
+	    .atter("x",0)
+	    .atter("y",0)
 	    .text("xlabel");
 	self.yaxis_group
 	    .call( self.yaxis );
