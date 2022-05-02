@@ -104,10 +104,10 @@ class ScatterPlot {
 	    .attr("fill", "black")
 	    .attr("text-anchor", "middle")
 	    .attr("x", 10)
-	    .attr("y", -35)
+	    .attr("y", self.inner_hight/2)
 	    .attr("transform", "rotate(-90)")
 	    .attr("font-weight", "middle")
 	    .attr("font-size", "10pt")
-	    .text("最高気温");;
+	    .text("ylabel");;
     }
 }
