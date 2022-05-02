@@ -22,7 +22,7 @@ class ScatterPlot {
         this.config = {
             parent: config.parent,
             width: config.width || 256,
-            height: config.height || 512,
+            height: config.height || 256,
             margin: config.margin || {top:10, right:10, bottom:10, left:10}
         }
         this.data = data;
@@ -43,7 +43,7 @@ class ScatterPlot {
         self.inner_height = self.config.height - self.config.margin.top - self.config.margin.bottom;
 
         self.xscale = d3.scaleLinear()
-            .range( [0, self.inner_width] );
+            .range( [0, self.inner_width+100] );
 
         self.yscale = d3.scaleLinear()
             .range( [0, self.inner_height] );
