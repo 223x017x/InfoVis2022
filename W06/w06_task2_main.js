@@ -89,11 +89,14 @@ class ScatterPlot {
 
         self.xaxis_group
             .call( self.xaxis )
-	    //.append("text")
-	    //.atter("fill","black")
-	    //.atter("x",0)
-	    //.atter("y",0)
-	    //.text("xlabel")
+	      .append("text")
+	      .atter("fill","black")
+	      .atter("x",0)
+	      .atter("y",0)
+	      .attr("text-anchor", "middle")
+              .attr("font-size", "10pt")
+              .attr("font-weight", "middle")
+	      .text("xlabel")
 	;
 	self.yaxis_group
 	    .call( self.yaxis );
