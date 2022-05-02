@@ -92,13 +92,22 @@ class ScatterPlot {
 	      .append("text")
 	      .attr("fill","black")
 	      .attr("x",self.inner_width/2)
-	    .attr("y",30)
+	      .attr("y",30)
 	      .attr("text-anchor", "middle")
               .attr("font-size", "10pt")
               .attr("font-weight", "middle")
 	      .text("xlabel")
 	;
 	self.yaxis_group
-	    .call( self.yaxis );
+	    .call( self.yaxis )
+	    .append("text")
+	    .attr("fill", "black")
+	    .attr("text-anchor", "middle")
+	    .attr("x", 10)
+	    .attr("y", -35)
+	    .attr("transform", "rotate(-90)")
+	    .attr("font-weight", "middle")
+	    .attr("font-size", "10pt")
+	    .text("最高気温");;
     }
 }
