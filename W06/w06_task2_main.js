@@ -67,11 +67,11 @@ class ScatterPlot {
 
         const xmin = d3.min( self.data, d => d.x );
         const xmax = d3.max( self.data, d => d.x );
-        self.xscale.domain( [xmin, xmax] );
+        self.xscale.domain( [xmin - 20, xmax + 20] );
 
         const ymin = d3.min( self.data, d => d.y );
         const ymax = d3.max( self.data, d => d.y );
-        self.yscale.domain( [ymin, ymax] );
+        self.yscale.domain( [ymin - 20, ymax + 20] );
 
         self.render();
     }
@@ -79,7 +79,7 @@ class ScatterPlot {
     render() {
         let self = this;
 
-	svg.append("text")
+         svg.append("text")
 	    .attr("x", 24)
 	    .attr("y", 12)
 	    .attr("font-size", "13px")
