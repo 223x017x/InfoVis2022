@@ -80,8 +80,8 @@ class ScatterPlot {
         let self = this;
 
          self.svg.append("text")
-	    .attr("x", 70)
-	    .attr("y", 5)
+	    .attr("x", 100)
+	    .attr("y", 10)
 	    .attr("font-size", "13px")
 	    .attr("text-anchor", "top")
 	    .attr("font-weight", 700)
